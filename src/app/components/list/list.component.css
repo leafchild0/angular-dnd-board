@@ -1,0 +1,43 @@
+.list {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: lightgray;
+}
+
+.list-header {
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-bottom: 2px dashed darkgrey;
+    padding-bottom: 5px;
+}
+
+.list-content {
+    margin-top: 20px;
+}
+
+.new-tile {
+    margin: 5px;
+}
+
+.new-text {
+    word-wrap: break-word;
+    font-size: 16px;
+    border-radius: 4px;
+    width: fill-available;
+}
+
+.add-new-btn {
+    float: right;
+    width: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

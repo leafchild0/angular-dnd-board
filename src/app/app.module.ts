@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {DndModule} from 'ng2-dnd';
 
 import { AppComponent } from './app.component';
 import { BoardComponent } from './components/board/board.component';
@@ -17,7 +18,8 @@ import { UtilsService } from './services/utils.service';
     TileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DndModule.forRoot()
   ],
   providers: [ListService, UtilsService],
   bootstrap: [AppComponent]

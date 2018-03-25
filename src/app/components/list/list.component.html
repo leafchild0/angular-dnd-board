@@ -1,3 +1,10 @@
-<p>
-  list works!
-</p>
+<div class="list">
+    <div class="list-header">{{name}}</div>
+    <div class="list-content" dnd-sortable-container [sortableData]="tiles">
+        <app-tile *ngFor="let t of tiles ; let i = index" class="tile" dnd-sortable [sortableIndex]="i" [tile]="t"></app-tile>
+    </div>
+    <div class="new-tile clearfix">
+        <textarea type="text" class="new-text" rows="3" placeholder="Add new"></textarea>
+        <button class="add-new-btn">Add</button>
+    </div>
+</div>
